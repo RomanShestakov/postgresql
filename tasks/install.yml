@@ -31,6 +31,7 @@
     pkg: "{{item}}"
     state: present
     update_cache: yes
+    force: yes
     cache_valid_time: "{{apt_cache_valid_time | default (3600)}}"
   with_items: ["python-psycopg2", "python-pycurl", "locales"]
 
